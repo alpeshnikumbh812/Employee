@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.example.employee.EmployeeApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.404 s <<< FAILURE! - in com.example.employee.EmployeeApplicationTests
+contextLoads  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.defaultViewResolver
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/util/pattern/PathPatternParser
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.util.pattern.PathPatternParser
+
